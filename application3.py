@@ -464,6 +464,13 @@ def daily_news_positive_link():
                   }
                 },
               ],
+                "buttons": [
+                {
+                  "label": "뒤로가기",
+                  "action": "message",
+                  "messageText" : "긍정뉴스",
+                }
+              ]
             }
           }
         ]
@@ -662,6 +669,13 @@ def daily_news_negative_link():
                   }
                 },
               ],
+                "buttons": [
+                {
+                  "label": "뒤로가기",
+                  "action": "message",
+                  "messageText" : "부정뉴스",
+                }
+              ]
             }
           }
         ]
@@ -1023,7 +1037,14 @@ def stock():
           "header": {
             "title": answer
           },
-          "items": res
+          "items": res,
+            "buttons": [
+                {
+                  "label": "뒤로가기",
+                  "action": "message",
+                  "messageText" : "업종별",
+                }
+              ]
         }
       }
     ]
@@ -1037,6 +1058,10 @@ def stock():
 
 #---------------------------------------------------------------------------------------------------
 #종목 리스트 출력
+
+with open('back_dic.pickle','rb') as f:
+    back_dic = pickle.load(f)
+
 @application.route("/stock_l", methods=["POST"])
 def stock_l():
     
@@ -1056,7 +1081,7 @@ def stock_l():
               },
               "items": [
                 {
-                  "title": "시세 방향 추이",
+                  "title": answer+ " 시세 방향 추이",
               	  "description": set_d+"일자 시세 확인",
                   "imageUrl": "https://img.lovepik.com/photo/50030/2947.jpg_wh860.jpg",
                   "action": "message",
@@ -1084,6 +1109,13 @@ def stock_l():
                   "messageText": answer+"뉴스링크",
                 },
               ],
+                "buttons": [
+                {
+                  "label": "뒤로가기",
+                  "action": "message",
+                  "messageText" : back_dic[answer],
+                }
+              ]
             }
           }
         ]
@@ -1148,13 +1180,17 @@ for i, j in pred_dic.items():
         
 pred_dic_select_str = {}
 for i, j in pred_dic_select.items():
-    string_all =''
-    for k in range(len(j)):
-        if k == 2:
-            string_all+=j[k]+ '%가 예상됩니다.'
-        else:
-            string_all+=j[k]+ '%,  '
-    pred_dic_select_str[i]=string_all
+    정확도 = float(j[0][11:])
+    상향 = float(j[1][9:])
+    하향 = float(j[2][9:])
+    횡보 = float(j[3][9:])
+    최대 = max(상향,하향,횡보)
+    if 최대 == 상향:
+        pred_dic_select_str[i] = f'상향이 예상됩니다. 정확도는 {정확도}%입니다.'
+    elif 최대 == 하향:
+        pred_dic_select_str[i] = f'하향이 예상됩니다. 정확도는 {정확도}%입니다.'
+    elif 최대 == 횡보:
+        pred_dic_select_str[i] = f'횡보가 예상됩니다. 정확도는 {정확도}%입니다.'
     
 result_dic = {}
 for i,j in stock_dic.items():
@@ -1442,6 +1478,13 @@ def stock_link():
                   }
                 },
               ],
+                "buttons": [
+                {
+                  "label": "뒤로가기",
+                  "action": "message",
+                  "messageText" : answer[:n],
+                }
+              ]
             }
           }
         ]
@@ -1450,12 +1493,6 @@ def stock_link():
 
     # 답변 전송
     return jsonify(response)
-
-
-
-
-
-
 
 
 
