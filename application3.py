@@ -31,10 +31,24 @@ with open('daily_news.pickle','rb') as f:
 df_sector = {
     'Food':{
         '097950':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
-        '271560':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
+        '271560':['관리 모멘텀 안타',
+   '매출 젤리 오리온',
+   '오리온 마이 구미',
+   'https://finance.naver.com/item/news_read.naver?article_id=0004085540&office_id=011&code=271560&page=1&sm=title_entity_id.basic',
+   'https://finance.naver.com/item/news_read.naver?article_id=0002026235&office_id=016&code=271560&page=1&sm=title_entity_id.basic',
+   'https://finance.naver.com/item/news_read.naver?article_id=0004780723&office_id=008&code=271560&page=1&sm=title_entity_id.basic',
+   'https://finance.naver.com/item/news_read.naver?article_id=0005129852&office_id=277&code=271560&page=1&sm=title_entity_id.basic',
+   'https://finance.naver.com/item/news_read.naver?article_id=0005287215&office_id=018&code=271560&page=1&sm=title_entity_id.basic'],
         '000080':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
         '004370':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
-        '005300':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/']
+        '005300':['롯데 칠성 편입',
+   '롯데 칠성 주가',
+   '롯데 칠성 탄산음료',
+   'https://finance.naver.com/item/news_read.naver?article_id=0000831697&office_id=366&code=005300&page=1&sm=title_entity_id.basic',
+   'https://finance.naver.com/item/news_read.naver?article_id=0005282747&office_id=018&code=005300&page=1&sm=title_entity_id.basic',
+   'https://finance.naver.com/item/news_read.naver?article_id=0000076453&office_id=024&code=005300&page=1&sm=title_entity_id.basic',
+   'https://finance.naver.com/item/news_read.naver?article_id=0000831430&office_id=366&code=005300&page=1&sm=title_entity_id.basic',
+   'https://finance.naver.com/item/news_read.naver?article_id=0004876548&office_id=014&code=005300&page=1&sm=title_entity_id.basic']
     },
     'Clothing' : {
         '093050':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
