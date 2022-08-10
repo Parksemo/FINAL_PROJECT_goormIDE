@@ -25,135 +25,135 @@ import pickle5 as pickle2
 with open('daily_news.pickle','rb') as f:
     daily_news = pickle2.load(f)
 
-# with open('df_sector_A.pickle', 'rb') as f:
-#     df_sector = pickle2.load(f)
+with open('df_sector_A.pickle', 'rb') as f:
+    df_sector = pickle2.load(f)
 
-df_sector = {
-    'Food':{
-        '097950':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
-        '271560':['관리 모멘텀 안타',
-   '매출 젤리 오리온',
-   '오리온 마이 구미',
-   'https://finance.naver.com/item/news_read.naver?article_id=0004085540&office_id=011&code=271560&page=1&sm=title_entity_id.basic',
-   'https://finance.naver.com/item/news_read.naver?article_id=0002026235&office_id=016&code=271560&page=1&sm=title_entity_id.basic',
-   'https://finance.naver.com/item/news_read.naver?article_id=0004780723&office_id=008&code=271560&page=1&sm=title_entity_id.basic',
-   'https://finance.naver.com/item/news_read.naver?article_id=0005129852&office_id=277&code=271560&page=1&sm=title_entity_id.basic',
-   'https://finance.naver.com/item/news_read.naver?article_id=0005287215&office_id=018&code=271560&page=1&sm=title_entity_id.basic'],
-        '000080':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
-        '004370':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
-        '005300':['롯데 칠성 편입',
-   '롯데 칠성 주가',
-   '롯데 칠성 탄산음료',
-   'https://finance.naver.com/item/news_read.naver?article_id=0000831697&office_id=366&code=005300&page=1&sm=title_entity_id.basic',
-   'https://finance.naver.com/item/news_read.naver?article_id=0005282747&office_id=018&code=005300&page=1&sm=title_entity_id.basic',
-   'https://finance.naver.com/item/news_read.naver?article_id=0000076453&office_id=024&code=005300&page=1&sm=title_entity_id.basic',
-   'https://finance.naver.com/item/news_read.naver?article_id=0000831430&office_id=366&code=005300&page=1&sm=title_entity_id.basic',
-   'https://finance.naver.com/item/news_read.naver?article_id=0004876548&office_id=014&code=005300&page=1&sm=title_entity_id.basic']
-    },
-    'Clothing' : {
-        '093050':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
-        '020000':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
-        '105630':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
-        '001070':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/']
-    },
-    'Chemical' : {
-        '051910':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
-        '096770':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
-        '010950':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
-        '051900':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
-        '090430':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/']
-    },
-    'Medicine' : {
-        '207940':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
-        '068270':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
-        '000100':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
-        '128940':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/']
-    },
-    'Non_Metal' : {
-        '003670':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
-        '003410':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
-        '010780':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/']
-    },
-    'Metal': {
-        '005490':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
-        '010130':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
-        '004020':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
-        '016380':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
-        '001230':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/']
-    },
-    'Machine' : {
-        '034020':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
-        '018880':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
-        '241560':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
-        '112610':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/']
-    },
-    'Electronic' : {
-        '005930':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
-        '000660':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
-        '006400':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
-        '066570':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/']
-    },
-    'Construction' : {
-        '000720':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
-        '006360':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
-        '047040':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
-        '051600':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/']
-    },
-    'Transport': {
-        '011200':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
-        '003490':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
-        '086280':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
-        '180640':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
-        '028670':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/']
-    },
-    'Distribution' : {
-        '028260':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
-        '023530':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
-        '282330':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
-        '139480':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
-        '004170':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/']
-    },
-    'Power': {
-        '015760':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
-        '036460':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
-        '017390':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/']
-    },
-    'Tele' : {
-        '017670':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
-        '030200':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
-        '032640':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/']
-    },
-    'Finance': {
-        '003550':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
-        '000810':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
-        '006800':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/']
-    },
-    'Brokerage' : {
-        '005940':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
-        '016360':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
-        '008560':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
-        '039490':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/']
-    },
-    'Insurer': {
-        '032830':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
-        '005830':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
-        '000060':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
-        '001450':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/']
-    },
-    'Service': {
-        '035420':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
-        '035720':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
-        '018260':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
-        '036570':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/']
-    },
-    'Manufacturer': {
-        '005380':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
-        '000270':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
-        '012330':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
-        '033780':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
-        '009150':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/']
-    }
-}
+# df_sector = {
+#     'Food':{
+#         '097950':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
+#         '271560':['관리 모멘텀 안타',
+#    '매출 젤리 오리온',
+#    '오리온 마이 구미',
+#    'https://finance.naver.com/item/news_read.naver?article_id=0004085540&office_id=011&code=271560&page=1&sm=title_entity_id.basic',
+#    'https://finance.naver.com/item/news_read.naver?article_id=0002026235&office_id=016&code=271560&page=1&sm=title_entity_id.basic',
+#    'https://finance.naver.com/item/news_read.naver?article_id=0004780723&office_id=008&code=271560&page=1&sm=title_entity_id.basic',
+#    'https://finance.naver.com/item/news_read.naver?article_id=0005129852&office_id=277&code=271560&page=1&sm=title_entity_id.basic',
+#    'https://finance.naver.com/item/news_read.naver?article_id=0005287215&office_id=018&code=271560&page=1&sm=title_entity_id.basic'],
+#         '000080':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
+#         '004370':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
+#         '005300':['롯데 칠성 편입',
+#    '롯데 칠성 주가',
+#    '롯데 칠성 탄산음료',
+#    'https://finance.naver.com/item/news_read.naver?article_id=0000831697&office_id=366&code=005300&page=1&sm=title_entity_id.basic',
+#    'https://finance.naver.com/item/news_read.naver?article_id=0005282747&office_id=018&code=005300&page=1&sm=title_entity_id.basic',
+#    'https://finance.naver.com/item/news_read.naver?article_id=0000076453&office_id=024&code=005300&page=1&sm=title_entity_id.basic',
+#    'https://finance.naver.com/item/news_read.naver?article_id=0000831430&office_id=366&code=005300&page=1&sm=title_entity_id.basic',
+#    'https://finance.naver.com/item/news_read.naver?article_id=0004876548&office_id=014&code=005300&page=1&sm=title_entity_id.basic']
+#     },
+#     'Clothing' : {
+#         '093050':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
+#         '020000':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
+#         '105630':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
+#         '001070':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/']
+#     },
+#     'Chemical' : {
+#         '051910':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
+#         '096770':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
+#         '010950':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
+#         '051900':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
+#         '090430':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/']
+#     },
+#     'Medicine' : {
+#         '207940':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
+#         '068270':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
+#         '000100':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
+#         '128940':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/']
+#     },
+#     'Non_Metal' : {
+#         '003670':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
+#         '003410':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
+#         '010780':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/']
+#     },
+#     'Metal': {
+#         '005490':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
+#         '010130':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
+#         '004020':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
+#         '016380':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
+#         '001230':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/']
+#     },
+#     'Machine' : {
+#         '034020':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
+#         '018880':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
+#         '241560':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
+#         '112610':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/']
+#     },
+#     'Electronic' : {
+#         '005930':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
+#         '000660':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
+#         '006400':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
+#         '066570':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/']
+#     },
+#     'Construction' : {
+#         '000720':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
+#         '006360':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
+#         '047040':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
+#         '051600':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/']
+#     },
+#     'Transport': {
+#         '011200':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
+#         '003490':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
+#         '086280':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
+#         '180640':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
+#         '028670':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/']
+#     },
+#     'Distribution' : {
+#         '028260':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
+#         '023530':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
+#         '282330':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
+#         '139480':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
+#         '004170':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/']
+#     },
+#     'Power': {
+#         '015760':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
+#         '036460':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
+#         '017390':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/']
+#     },
+#     'Tele' : {
+#         '017670':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
+#         '030200':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
+#         '032640':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/']
+#     },
+#     'Finance': {
+#         '003550':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
+#         '000810':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
+#         '006800':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/']
+#     },
+#     'Brokerage' : {
+#         '005940':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
+#         '016360':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
+#         '008560':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
+#         '039490':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/']
+#     },
+#     'Insurer': {
+#         '032830':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
+#         '005830':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
+#         '000060':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
+#         '001450':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/']
+#     },
+#     'Service': {
+#         '035420':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
+#         '035720':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
+#         '018260':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
+#         '036570':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/']
+#     },
+#     'Manufacturer': {
+#         '005380':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
+#         '000270':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
+#         '012330':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
+#         '033780':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/'],
+#         '009150':['키워드1','키워드2','키워드3','https://www.nate.com/','https://www.naver.com/','https://www.google.co.kr/','https://www.daum.net/','https://tv.kakao.com/']
+#     }
+# }
 
 
 #-----------------------------------------------------------------------------------------
@@ -929,7 +929,7 @@ def sector_l_response(answer,n):
         res = [
              {
               "title": sector_l[answer][0],
-              "imageUrl": "https://img.danawa.com/prod_img/500000/284/976/img/8976284_1.jpg?shrink=330:330&_v=20190802153645",
+              #"imageUrl": "https://img.danawa.com/prod_img/500000/284/976/img/8976284_1.jpg?shrink=330:330&_v=20190802153645",
               "action": "message",
               "messageText": sector_l[answer][0],
               },
@@ -938,13 +938,13 @@ def sector_l_response(answer,n):
         res = [
              {
               "title": sector_l[answer][0],
-              "imageUrl": "https://img.danawa.com/prod_img/500000/164/976/img/8976164_1.jpg?shrink=330:330&_v=20190802153555",
+              #"imageUrl": "https://img.danawa.com/prod_img/500000/164/976/img/8976164_1.jpg?shrink=330:330&_v=20190802153555",
               "action": "message",
               "messageText": sector_l[answer][0],
               },
             {
               "title": sector_l[answer][1],
-              "imageUrl": "https://img.danawa.com/prod_img/500000/452/976/img/8976452_1.jpg?shrink=330:330&_v=20190802154103",
+              #"imageUrl": "https://img.danawa.com/prod_img/500000/452/976/img/8976452_1.jpg?shrink=330:330&_v=20190802154103",
               "action": "message",
               "messageText": sector_l[answer][1],
               },
@@ -953,19 +953,19 @@ def sector_l_response(answer,n):
         res = [
              {
               "title": sector_l[answer][0],
-              "imageUrl": "https://shop1.daumcdn.net/thumb/R500x500/?fname=http%3A%2F%2Fshop1.daumcdn.net%2Fshophow%2Fp%2FO16783343728.jpg%3Fut%3D20220324163643",
+              #"imageUrl": "https://shop1.daumcdn.net/thumb/R500x500/?fname=http%3A%2F%2Fshop1.daumcdn.net%2Fshophow%2Fp%2FO16783343728.jpg%3Fut%3D20220324163643",
               "action": "message",
               "messageText": sector_l[answer][0],
               },
             {
               "title": sector_l[answer][1],
-              "imageUrl": "https://thumbnail9.coupangcdn.com/thumbnails/remote/492x492ex/image/retail/images/2021/03/08/15/3/3c275dcf-458d-4af1-8bc2-45ed7ea70219.jpg",
+              #"imageUrl": "https://thumbnail9.coupangcdn.com/thumbnails/remote/492x492ex/image/retail/images/2021/03/08/15/3/3c275dcf-458d-4af1-8bc2-45ed7ea70219.jpg",
               "action": "message",
               "messageText": sector_l[answer][1],
               },
             {
               "title": sector_l[answer][2],
-              "imageUrl": "https://img.danawa.com/prod_img/500000/044/976/img/8976044_1.jpg?shrink=330:330&_v=20190802153539",
+              #"imageUrl": "https://img.danawa.com/prod_img/500000/044/976/img/8976044_1.jpg?shrink=330:330&_v=20190802153539",
               "action": "message",
               "messageText": sector_l[answer][2],
               },
@@ -974,25 +974,25 @@ def sector_l_response(answer,n):
         res = [
              {
               "title": sector_l[answer][0],
-              "imageUrl": "https://cdn.011st.com/11dims/resize/600x600/quality/75/11src/product/3181252337/B.jpg?479000000",
+              #"imageUrl": "https://cdn.011st.com/11dims/resize/600x600/quality/75/11src/product/3181252337/B.jpg?479000000",
               "action": "message",
               "messageText": sector_l[answer][0],
               },
             {
               "title": sector_l[answer][1],
-              "imageUrl": "https://img.danawa.com/prod_img/500000/284/976/img/8976284_1.jpg?shrink=330:330&_v=20190802153645",
+              #"imageUrl": "https://img.danawa.com/prod_img/500000/284/976/img/8976284_1.jpg?shrink=330:330&_v=20190802153645",
               "action": "message",
               "messageText": sector_l[answer][1],
               },
             {
               "title": sector_l[answer][2],
-              "imageUrl": "http://image.kyobobook.co.kr/newimages/giftshop_new/goods/400/1730/hot1539673071039.jpg",
+              #"imageUrl": "http://image.kyobobook.co.kr/newimages/giftshop_new/goods/400/1730/hot1539673071039.jpg",
               "action": "message",
               "messageText": sector_l[answer][2],
               },
             {
               "title": sector_l[answer][3],
-              "imageUrl": "http://mstatic1.e-himart.co.kr/contents/goods/00/15/59/76/87/0015597687__MW64027_1944709__M_640_640.jpg",
+              #"imageUrl": "http://mstatic1.e-himart.co.kr/contents/goods/00/15/59/76/87/0015597687__MW64027_1944709__M_640_640.jpg",
               "action": "message",
               "messageText": sector_l[answer][3],
               },
@@ -1001,31 +1001,31 @@ def sector_l_response(answer,n):
         res = [
              {
               "title": sector_l[answer][0],
-              "imageUrl": "https://shop1.daumcdn.net/thumb/R500x500/?fname=http%3A%2F%2Fshop1.daumcdn.net%2Fshophow%2Fp%2FO16783343728.jpg%3Fut%3D20220324163643",
+              #"imageUrl": "https://shop1.daumcdn.net/thumb/R500x500/?fname=http%3A%2F%2Fshop1.daumcdn.net%2Fshophow%2Fp%2FO16783343728.jpg%3Fut%3D20220324163643",
               "action": "message",
               "messageText": sector_l[answer][0],
               },
             {
               "title": sector_l[answer][1],
-              "imageUrl": "https://thumbnail9.coupangcdn.com/thumbnails/remote/492x492ex/image/retail/images/2021/03/08/15/3/3c275dcf-458d-4af1-8bc2-45ed7ea70219.jpg",
+              #"imageUrl": "https://thumbnail9.coupangcdn.com/thumbnails/remote/492x492ex/image/retail/images/2021/03/08/15/3/3c275dcf-458d-4af1-8bc2-45ed7ea70219.jpg",
               "action": "message",
               "messageText": sector_l[answer][1],
               },
             {
               "title": sector_l[answer][2],
-              "imageUrl": "https://img.danawa.com/prod_img/500000/044/976/img/8976044_1.jpg?shrink=330:330&_v=20190802153539",
+              #"imageUrl": "https://img.danawa.com/prod_img/500000/044/976/img/8976044_1.jpg?shrink=330:330&_v=20190802153539",
               "action": "message",
               "messageText": sector_l[answer][2],
               },
             {
               "title": sector_l[answer][3],
-              "imageUrl": "https://img.danawa.com/prod_img/500000/164/976/img/8976164_1.jpg?shrink=330:330&_v=20190802153555",
+              #"imageUrl": "https://img.danawa.com/prod_img/500000/164/976/img/8976164_1.jpg?shrink=330:330&_v=20190802153555",
               "action": "message",
               "messageText": sector_l[answer][3],
               },
             {
               "title": sector_l[answer][4],
-              "imageUrl": "https://img.danawa.com/prod_img/500000/452/976/img/8976452_1.jpg?shrink=330:330&_v=20190802154103",
+              #"imageUrl": "https://img.danawa.com/prod_img/500000/452/976/img/8976452_1.jpg?shrink=330:330&_v=20190802154103",
               "action": "message",
               "messageText": sector_l[answer][4],
               },
@@ -1488,15 +1488,162 @@ def stock_link_dic():
     
     return stock_link
 
+
+
+
 @application.route("/stock_link", methods=["POST"])
 def stock_link():
     
     result_l_link = stock_link_dic()
     
+    def stock_link_response(answer,A):
+        if A==1:
+            res = [
+                    {
+                      "title": "뉴스1",
+                      "description": "뉴스확인하기",
+                      #"imageUrl": "http://k.kakaocdn.net/dn/APR96/btqqH7zLanY/kD5mIPX7TdD2NAxgP29cC0/1x1.jpg",
+                      "link": {
+                        "web": result_l_link[answer][0]
+                      }
+                    },
+            ]
+        elif A==2:
+            res = [
+                    {
+                      "title": "뉴스1",
+                      "description": "뉴스확인하기",
+                      #"imageUrl": "http://k.kakaocdn.net/dn/APR96/btqqH7zLanY/kD5mIPX7TdD2NAxgP29cC0/1x1.jpg",
+                      "link": {
+                        "web": result_l_link[answer][0]
+                      }
+                    },
+                {
+                      "title": "뉴스2",
+                      "description": "뉴스확인하기",
+                      #"imageUrl": "http://k.kakaocdn.net/dn/APR96/btqqH7zLanY/kD5mIPX7TdD2NAxgP29cC0/1x1.jpg",
+                      "link": {
+                        "web": result_l_link[answer][1]
+                      }
+                    },
+            ]
+        elif A==3:
+            res = [
+                    {
+                      "title": "뉴스1",
+                      "description": "뉴스확인하기",
+                      #"imageUrl": "http://k.kakaocdn.net/dn/APR96/btqqH7zLanY/kD5mIPX7TdD2NAxgP29cC0/1x1.jpg",
+                      "link": {
+                        "web": result_l_link[answer][0]
+                      }
+                    },
+                {
+                      "title": "뉴스2",
+                      "description": "뉴스확인하기",
+                      #"imageUrl": "http://k.kakaocdn.net/dn/APR96/btqqH7zLanY/kD5mIPX7TdD2NAxgP29cC0/1x1.jpg",
+                      "link": {
+                        "web": result_l_link[answer][1]
+                      }
+                    },
+                {
+                      "title": "뉴스3",
+                      "description": "뉴스확인하기",
+                      #"imageUrl": "http://k.kakaocdn.net/dn/APR96/btqqH7zLanY/kD5mIPX7TdD2NAxgP29cC0/1x1.jpg",
+                      "link": {
+                        "web": result_l_link[answer][2]
+                      }
+                    },
+            ]
+        elif A==4:
+            res = [
+                    {
+                      "title": "뉴스1",
+                      "description": "뉴스확인하기",
+                      #"imageUrl": "http://k.kakaocdn.net/dn/APR96/btqqH7zLanY/kD5mIPX7TdD2NAxgP29cC0/1x1.jpg",
+                      "link": {
+                        "web": result_l_link[answer][0]
+                      }
+                    },
+                {
+                      "title": "뉴스2",
+                      "description": "뉴스확인하기",
+                      #"imageUrl": "http://k.kakaocdn.net/dn/APR96/btqqH7zLanY/kD5mIPX7TdD2NAxgP29cC0/1x1.jpg",
+                      "link": {
+                        "web": result_l_link[answer][1]
+                      }
+                    },
+                {
+                      "title": "뉴스3",
+                      "description": "뉴스확인하기",
+                      #"imageUrl": "http://k.kakaocdn.net/dn/APR96/btqqH7zLanY/kD5mIPX7TdD2NAxgP29cC0/1x1.jpg",
+                      "link": {
+                        "web": result_l_link[answer][2]
+                      }
+                    },
+                {
+                      "title": "뉴스4",
+                      "description": "뉴스확인하기",
+                      #"imageUrl": "http://k.kakaocdn.net/dn/APR96/btqqH7zLanY/kD5mIPX7TdD2NAxgP29cC0/1x1.jpg",
+                      "link": {
+                        "web": result_l_link[answer][3]
+                      }
+                    },
+            ]
+        elif A==5:
+            res = [
+                    {
+                      "title": "뉴스1",
+                      "description": "뉴스확인하기",
+                      #"imageUrl": "http://k.kakaocdn.net/dn/APR96/btqqH7zLanY/kD5mIPX7TdD2NAxgP29cC0/1x1.jpg",
+                      "link": {
+                        "web": result_l_link[answer][0]
+                      }
+                    },
+                {
+                      "title": "뉴스2",
+                      "description": "뉴스확인하기",
+                      #"imageUrl": "http://k.kakaocdn.net/dn/APR96/btqqH7zLanY/kD5mIPX7TdD2NAxgP29cC0/1x1.jpg",
+                      "link": {
+                        "web": result_l_link[answer][1]
+                      }
+                    },
+                {
+                      "title": "뉴스3",
+                      "description": "뉴스확인하기",
+                      #"imageUrl": "http://k.kakaocdn.net/dn/APR96/btqqH7zLanY/kD5mIPX7TdD2NAxgP29cC0/1x1.jpg",
+                      "link": {
+                        "web": result_l_link[answer][2]
+                      }
+                    },
+                {
+                      "title": "뉴스4",
+                      "description": "뉴스확인하기",
+                      #"imageUrl": "http://k.kakaocdn.net/dn/APR96/btqqH7zLanY/kD5mIPX7TdD2NAxgP29cC0/1x1.jpg",
+                      "link": {
+                        "web": result_l_link[answer][3]
+                      }
+                    },
+                {
+                      "title": "뉴스5",
+                      "description": "뉴스확인하기",
+                      #"imageUrl": "http://k.kakaocdn.net/dn/APR96/btqqH7zLanY/kD5mIPX7TdD2NAxgP29cC0/1x1.jpg",
+                      "link": {
+                        "web": result_l_link[answer][4]
+                      }
+                    },
+            ]
+        return res
+    
+    
+    
+    
     text = None
     req = request.get_json(silent=True)
     answer = req["action"]['detailParams']['stock_link_entity']['value']   # json파일 읽기
     n = len(answer) - 4
+    
+    A = len(result_l_link[answer])
+    res = stock_link_response(answer,A)
 
     # 답변 텍스트 설정
     response = {
@@ -1508,48 +1655,7 @@ def stock_link():
               "header": {
                 "title": answer[:n]+"뉴스링크"
               },
-              "items": [
-                {
-                  "title": "뉴스1",
-                  "description": "뉴스확인하기",
-                  #"imageUrl": "http://k.kakaocdn.net/dn/APR96/btqqH7zLanY/kD5mIPX7TdD2NAxgP29cC0/1x1.jpg",
-                  "link": {
-                    "web": result_l_link[answer][0]
-                  }
-                },
-                  {
-                  "title": "뉴스2",
-                  "description": "뉴스확인하기",
-                  #"imageUrl": "http://k.kakaocdn.net/dn/APR96/btqqH7zLanY/kD5mIPX7TdD2NAxgP29cC0/1x1.jpg",
-                  "link": {
-                    "web": result_l_link[answer][1]
-                  }
-                },
-                  {
-                  "title": "뉴스3",
-                  "description": "뉴스확인하기",
-                  #"imageUrl": "http://k.kakaocdn.net/dn/APR96/btqqH7zLanY/kD5mIPX7TdD2NAxgP29cC0/1x1.jpg",
-                  "link": {
-                    "web": result_l_link[answer][2]
-                  }
-                },
-                  {
-                  "title": "뉴스4",
-                  "description": "뉴스확인하기",
-                  #"imageUrl": "http://k.kakaocdn.net/dn/APR96/btqqH7zLanY/kD5mIPX7TdD2NAxgP29cC0/1x1.jpg",
-                  "link": {
-                    "web": result_l_link[answer][3]
-                  }
-                },
-                  {
-                  "title": "뉴스5",
-                  "description": "뉴스확인하기",
-                  #"imageUrl": "http://k.kakaocdn.net/dn/APR96/btqqH7zLanY/kD5mIPX7TdD2NAxgP29cC0/1x1.jpg",
-                  "link": {
-                    "web": result_l_link[answer][4]
-                  }
-                },
-              ],
+              "items": res,
                 "buttons": [
                 {
                   "label": "뒤로가기",
