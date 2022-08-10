@@ -182,20 +182,20 @@ def daily_news_all():
                 {
                   "title": "전체뉴스분석",
                   "description": "분석확인하기",
-                  "imageUrl": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjA3MjlfMjg4%2FMDAxNjU5MTAyMDEwOTU1.yC5GUnA29dMBrYl90MWlx10dvGcdDC31gZKUPqmhaIUg.2y-RQr7G3Mrf7_91EnZtc79sC_LnKan7HmgSILD4Q-gg.PNG.azumataiko%2F%25BD%25BA%25C5%25A9%25B8%25B0%25BC%25A6_2022-07-29_%25BF%25C0%25C8%25C4_10.40.01.png&type=sc960_832",
+                  "imageUrl": "https://png.pngtree.com/element_our/20190603/ourlarge/pngtree-trend-analysis-cartoon-illustration-image_1430285.jpg",
                   "action": "message",
                   "messageText": "전체뉴스분석",
                 },
                   {
                   "title": "전체뉴스키워드",
                   "description": "키워드확인하기",
-                  "imageUrl": "https://t1.daumcdn.net/cfile/tistory/996C5E455C7222192F",
+                  "imageUrl": "https://png.pngtree.com/png-vector/20190214/ourlarge/pngtree-vector-keyword-search-icon-png-image_508262.jpg",
                   "action": "message",
                   "messageText": "전체뉴스키워드",
                 },
                   {
                   "title": "긍정뉴스",
-                  "imageUrl": "http://www.supercoloring.com/sites/default/files/styles/coloring_medium/public/cif/2022/01/1-grinning-face-emoji-coloring-page.png",
+                  "imageUrl": "https://images-ext-1.discordapp.net/external/7NEs5_JY1eLBffCWn-KXXmBAYufHiEIhRlH9Ko_sEmw/https/previews.123rf.com/images/gmast3r/gmast3r1703/gmast3r170300715/74207120-%25EB%2585%25B8%25EB%259E%2580-%25EC%259B%2583%25EB%258A%2594-%25EC%2596%25BC%25EA%25B5%25B4-%25EA%25B8%258D%25EC%25A0%2595%25EC%25A0%2581-%25EC%259D%25B8-%25EC%2582%25AC%25EB%259E%258C-%25EA%25B0%2590%25EC%25A0%2595-%25EC%2595%2584%25EC%259D%25B4%25EC%25BD%2598-%25ED%2594%258C%25EB%259E%25AB-%25EB%25B2%25A1%25ED%2584%25B0-%25EC%259D%25BC%25EB%259F%25AC%25EC%258A%25A4%25ED%258A%25B8-%25EB%25A0%2588%25EC%259D%25B4%25EC%2585%2598.jpg?width=551&height=551",
                   "description": "긍정뉴스확인하기",
                   "action": "message",
                   "messageText": "긍정뉴스",
@@ -203,7 +203,7 @@ def daily_news_all():
                   {
                   "title": "부정뉴스",
                   "description": "부정뉴스확인하기",
-                  "imageUrl": "https://www.supercoloring.com/sites/default/files/styles/coloring_medium/public/cif/2022/01/39-neutral-face-emoji-coloring-page.png",
+                  "imageUrl": "https://images-ext-1.discordapp.net/external/VNDPFEtljMeWlyAJJP2trH_SIed2FbXOl9UuIYusJbM/https/previews.123rf.com/images/gmast3r/gmast3r1703/gmast3r170300719/74206915-%25EB%2585%25B8%25EB%259E%2580-%25EC%258A%25AC%25ED%2594%2588-%25EC%2596%25BC%25EA%25B5%25B4-%25EC%2599%25B8%25EC%25B9%25A8-%25EB%25B6%2580%25EC%25A0%2595%25EC%25A0%2581%25EC%259D%25B8-%25EC%2582%25AC%25EB%259E%258C%25EB%2593%25A4-%25EA%25B0%2590%25EC%25A0%2595-%25EC%2595%2584%25EC%259D%25B4%25EC%25BD%2598-%25ED%2594%258C%25EB%259E%25AB-%25EB%25B2%25A1%25ED%2584%25B0-%25EC%259D%25BC%25EB%259F%25AC%25EC%258A%25A4%25ED%258A%25B8-%25EB%25A0%2588%25EC%259D%25B4%25EC%2585%2598.jpg?width=551&height=551",
                   "action": "message",
                   "messageText": "부정뉴스",
                 },
@@ -313,14 +313,14 @@ def daily_news_positive():
                 {
                   "title": "긍정뉴스분석",
                   "description": "분석확인하기",
-                  "imageUrl": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjA3MjlfMjg4%2FMDAxNjU5MTAyMDEwOTU1.yC5GUnA29dMBrYl90MWlx10dvGcdDC31gZKUPqmhaIUg.2y-RQr7G3Mrf7_91EnZtc79sC_LnKan7HmgSILD4Q-gg.PNG.azumataiko%2F%25BD%25BA%25C5%25A9%25B8%25B0%25BC%25A6_2022-07-29_%25BF%25C0%25C8%25C4_10.40.01.png&type=sc960_832",
+                  "imageUrl": "https://png.pngtree.com/element_our/20190603/ourlarge/pngtree-trend-analysis-cartoon-illustration-image_1430285.jpg",
                   "action": "message",
                   "messageText": "긍정뉴스분석",
                 },
                   {
                   "title": "긍정뉴스키워드",
                   "description": "키워드확인하기",
-                  "imageUrl": "https://t1.daumcdn.net/cfile/tistory/996C5E455C7222192F",
+                  "imageUrl": "https://png.pngtree.com/png-vector/20190214/ourlarge/pngtree-vector-keyword-search-icon-png-image_508262.jpg",
                   "action": "message",
                   "messageText": "긍정뉴스키워드",
                 },
@@ -514,14 +514,14 @@ def daily_news_negative():
                 {
                   "title": "부정뉴스분석",
                   "description": "분석확인하기",
-                  "imageUrl": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjA3MjlfMjg4%2FMDAxNjU5MTAyMDEwOTU1.yC5GUnA29dMBrYl90MWlx10dvGcdDC31gZKUPqmhaIUg.2y-RQr7G3Mrf7_91EnZtc79sC_LnKan7HmgSILD4Q-gg.PNG.azumataiko%2F%25BD%25BA%25C5%25A9%25B8%25B0%25BC%25A6_2022-07-29_%25BF%25C0%25C8%25C4_10.40.01.png&type=sc960_832",
+                  "imageUrl": "https://png.pngtree.com/element_our/20190603/ourlarge/pngtree-trend-analysis-cartoon-illustration-image_1430285.jpg",
                   "action": "message",
                   "messageText": "부정뉴스분석",
                 },
                   {
                   "title": "부정뉴스키워드",
                   "description": "키워드확인하기",
-                  "imageUrl": "https://t1.daumcdn.net/cfile/tistory/996C5E455C7222192F",
+                  "imageUrl": "https://png.pngtree.com/png-vector/20190214/ourlarge/pngtree-vector-keyword-search-icon-png-image_508262.jpg",
                   "action": "message",
                   "messageText": "부정뉴스키워드",
                 },
@@ -1103,7 +1103,7 @@ def stock_l():
                 },
                   {
                   "title": answer+" 전체분석",
-                  "imageUrl": "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjA3MjlfMjg4%2FMDAxNjU5MTAyMDEwOTU1.yC5GUnA29dMBrYl90MWlx10dvGcdDC31gZKUPqmhaIUg.2y-RQr7G3Mrf7_91EnZtc79sC_LnKan7HmgSILD4Q-gg.PNG.azumataiko%2F%25BD%25BA%25C5%25A9%25B8%25B0%25BC%25A6_2022-07-29_%25BF%25C0%25C8%25C4_10.40.01.png&type=sc960_832",
+                  "imageUrl": "https://png.pngtree.com/element_our/20190603/ourlarge/pngtree-trend-analysis-cartoon-illustration-image_1430285.jpg",
                   "description": "분석확인하기",
                   "action": "message",
                   "messageText": answer+"분석",
@@ -1111,7 +1111,7 @@ def stock_l():
                   {
                   "title": answer+" 뉴스키워드",
                   "description": "키워드확인하기",
-                  "imageUrl": "https://t1.daumcdn.net/cfile/tistory/996C5E455C7222192F",
+                  "imageUrl": "https://png.pngtree.com/png-vector/20190214/ourlarge/pngtree-vector-keyword-search-icon-png-image_508262.jpg",
                   "action": "message",
                   "messageText": answer+"키워드",
                 },
@@ -1151,6 +1151,9 @@ with open('certificated_stock_dic.pickle','rb') as f:
     
 with open('sector.pickle', 'rb') as f:
     sector1 = pickle.load(f)
+
+with open('label_ratio_dic.pickle', 'rb') as f:
+    label_ratio_dic = pickle.load(f)
     
 sector2 = {
     '음식료품' : ['CJ제일제당','오리온', '하이트진로', '농심', '롯데칠성'],
@@ -1172,6 +1175,16 @@ sector2 = {
     '서비스업' : ['Naver', '카카오', '삼성에스디에스', '엔씨소프트'],
     '제조업' :  ['현대차', '기아', '현대모비스', 'KT&G', '삼성전기']
 }
+label_ratio_dic_2 = {}
+for sectorname, stock_list in label_ratio_dic.items():
+    for stock, result in stock_list.items():
+        ratio_l = []
+        상향 = round(result['상향'],2)
+        하향 = round(result['하향'],2)
+        횡보 = round(result['횡보'],2)
+        레이블링_비율 = "레이블링 비율 : "+str(상향)+"% "+str(하향)+"% "+str(횡보)+"%"
+
+        label_ratio_dic_2[sectorname+stock] = 레이블링_비율
 
 sector_code = []
 for sectorname, stock_list in sector1.items():
@@ -1194,27 +1207,30 @@ for i, j in pred_dic.items():
         
 pred_dic_select_str = {}
 for i, j in pred_dic_select.items():
-    정확도 = float(j[0][11:])
-    상향 = float(j[1][9:])
-    하향 = float(j[2][9:])
-    횡보 = float(j[3][9:])
-    최대 = max(상향,하향,횡보)
-    if 최대 == 상향:
-        pred_dic_select_str[i] = f'상향이 예상됩니다. 정확도는 {정확도}%입니다.'
-    elif 최대 == 하향:
-        pred_dic_select_str[i] = f'하향이 예상됩니다. 정확도는 {정확도}%입니다.'
-    elif 최대 == 횡보:
-        pred_dic_select_str[i] = f'횡보가 예상됩니다. 정확도는 {정확도}%입니다.'
+    a_l = []
+    정확도 = "모델 정확도 : "+str(float(j[0][11:]))+"%"
+    예측확률 = "예측 확률 : "+str(float(j[1][9:]))+"% "+str(float(j[2][9:]))+"% "+str(float(j[3][9:]))+"%"
+    a_l.append(정확도)
+    a_l.append(예측확률)
+    pred_dic_select_str[i] = a_l
     
 result_dic = {}
 for i,j in stock_dic.items():
     if i not in list(pred_dic_select_str.keys()):
-        result_dic[i]='해당 종목은 정확도 항샹을 위한 성능 개선중에 있습니다.'
+        result_dic[i]=['해당 종목 정확도 성능 개선중',[]]
     else:
-        result_dic[i]=pred_dic_select_str[i]    
+        result_dic[i]=pred_dic_select_str[i]
+
+result_dic_2 = {}
+for i,j in result_dic.items():
+    result_dic_2[i] = [j[0],label_ratio_dic_2[i],j[1]]
+
+for i,j in result_dic_2.items():
+    if j[0] == '해당 종목 정확도 성능 개선중':
+        result_dic_2[i] = ['해당 종목','정확도 성능','개선중']
         
 result_l = {}
-for i,j in result_dic.items():
+for i,j in result_dic_2.items():
     result_l[stock_dic[i]]=j
     
 result_l_price = {}
@@ -1228,23 +1244,65 @@ def stock_price():
     req = request.get_json(silent=True)
     answer = req["action"]['detailParams']['stock_price_entity']['value']   # json파일 읽기
     n = len(answer) - 2
-
+    
+    if result_l_price[answer][0] == '해당 종목':
+        URL = 'https://t1.kakaocdn.net/openbuilder/sample/lj3JUcmrzC53YIjNDkqbWK.jpg'
+    else:
+        상향 = float(result_l_price[answer][2][8:12])
+        하향 = float(result_l_price[answer][2][14:18])
+        횡보 = float(result_l_price[answer][2][20:24])
+        if max(상향,하향,횡보) == 상향:
+            URL = 'https://media.discordapp.net/attachments/992344867718037604/1006739068345917591/up.png'
+        if max(상향,하향,횡보) == 하향:
+            URL = 'https://cdn.discordapp.com/attachments/992344867718037604/1006739067918106696/down.png'
+        if max(상향,하향,횡보) == 횡보:
+            URL = 'https://cdn.discordapp.com/attachments/992344867718037604/1006739067398004756/sideways.png'
+    
+    result_l_price
     # 답변 텍스트 설정
     response = {
         "version": "2.0",
         "template": {
-            "outputs": [
+            "outputs":[
+      {
+        "basicCard": {
+          "title": answer[:n],
+          "description": result_l_price[answer][0]+"\n"+result_l_price[answer][1]+"\n"+result_l_price[answer][2],
+          "thumbnail": {
+            "imageUrl": URL
+          },
+            "buttons": [
                 {
-                    "simpleText": {
-                        "text": answer[:n] + '의 ' + set_d + '일자 ' + result_l_price[answer]
-                    }
+                  "label": "뒤로가기",
+                  "action": "message",
+                  "messageText" : answer[:n],
                 }
-            ]
+              ]
         }
-    }
+      }
+    ]
+  }
+}
 
     # 답변 전송
     return jsonify(response)
+
+    # # 답변 텍스트 설정
+    # response = {
+    #     "version": "2.0",
+    #     "template": {
+    #         "outputs": [
+    #             {
+    #                 "simpleText": {
+    #                     "text": answer[:n] + '의 ' + set_d + '일자 ' + result_l_price[answer]
+    #                 }
+    #             }
+    #         ]
+    #     }
+    # }
+
+    # # 답변 전송
+    # return jsonify(response)
 
 
 #-----------------------------------------------------------------------------------------
